@@ -1,3 +1,9 @@
+
+import Index from "./Pges";
+
 export default function Home() {
-  return <>Hello</>;
+  return <>
+<Index/>
+</>;
+
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Audiowide, DM_Sans, Rethink_Sans } from "next/font/google";
 import "./globals.css";
+import Navbar from "./Components/Navbar/Navbar";
 
 const rethink = Rethink_Sans({
   variable: "--font-rethink",
@@ -29,13 +30,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" >
       <body className={`${rethink.variable}  ${dmSans.variable}  ${audiowide.variable} antialiased`}>
+       <Navbar/>
         {children}
       </body>
     </html>
   );
-}
-function Rethink_sans(arg0: { va: any }) {
-  throw new Error("Function not implemented.");
 }
