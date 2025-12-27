@@ -1,6 +1,8 @@
 
 import About from './About/Page';
+import Contact from './Contact/Page';
 import Faqs from './Fags/Page';
+import Gallery from './Gallerys/Page';
 import Hero from './Hero/Page'
 import MarqueeSldier1 from './MarqueeSlider1/Page';
 import Expertise from './Our-Expertise/Page';
@@ -17,6 +19,8 @@ const Index = () => {
         <Expertise/>
         <Testimonial/>
         <Faqs/>
+        <Contact/>
+        <Gallery/>
     </div>
   )
 }
