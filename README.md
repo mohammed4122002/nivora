@@ -44,6 +44,3 @@
 
 اتبع الخطوات التالية لتشغيل مشروع **ليفورا** محلياً على جهازك:
 
-1. **استنساخ المشروع:**
-   ```bash
-   git clone [https://github.com/your-username/livora-studio.git](https://github.com/your-username/livora-studio.git)
