@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏛️ ليفورا (Livora) | استوديو التصميم المعماري والحلول الرقمية الإبداعية
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-3.4-blue?style=for-the-badge&logo=tailwind-css)
+![Swiper JS](https://img.shields.io/badge/Swiper_JS-Latest-orange?style=for-the-badge&logo=swiper)
+![TypeScript](https://img.shields.io/badge/TypeScript-Latest-blue?style=for-the-badge&logo=typescript)
 
-First, run the development server:
+منصة ويب فاخرة وعصرية تم بناؤها باستخدام **Next.js** لتقديم خدمات التصميم المعماري، الديكور الداخلي، والحلول الرقمية بأسلوب "Minimalist" يجمع بين الفخامة والبساطة.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🖼️ الصفحة الرئيسية (Hero Section)
+![لقطة قسم الهيرو](public/1212.jpg)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ المميزات (Features)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* **💎 تصميم فخم (Luxury UI):** واجهة مستخدم تعتمد على المساحات المفتوحة والخطوط الراقية لتعزيز هوية العلامة التجارية.
+* **📱 تجربة مستخدم متكاملة:** تصميم متجاوب (Responsive) بالكامل يضمن تصفحاً سلساً من الجوال وحتى الشاشات العملاقة.
+* **🌍 دعم كامل للغة العربية (RTL):** هيكلية برمجية مدروسة تدعم القراءة من اليمين إلى اليسار مع خطوط متناسقة.
+* **📊 إحصائيات حية:** عدادات تفاعلية للمشاريع والعملاء باستخدام `React-CountUp`.
+* **🔄 سلايدر تفاعلي:** نظام استعراض لآراء العملاء (Testimonials) مدعوم بـ Swiper JS مع دعم السحب واللمس.
+* **✉️ نموذج تواصل ذكي:** نظام مراسلة مدمج وسهل الاستخدام للعملاء المحتملين.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+### 🏗️ قسم من نحن والخبرات (About & Expertise)
+![لقطة قسم الخبرات](public/12121.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ التقنيات المستخدمة (Tech Stack)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* **Framework:** [Next.js 15](https://nextjs.org/) (App Router)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Animations:** [React CountUp](https://github.com/glennreyes/react-countup)
+* **Slider:** [Swiper.js](https://swiperjs.com/)
+* **Icons:** [Bootstrap Icons](https://icons.getbootstrap.com/)
+* **Fonts:** Rethink Sans & DM Sans (تنسيق مخصص للعربية)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 💬 آراء العملاء والأسئلة الشائعة (Testimonials & FAQ)
+![لقطة الأقسام](public/sections-screenshot.jpg)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 التشغيل المباشر (Quick Start)
+
+اتبع الخطوات التالية لتشغيل مشروع **ليفورا** محلياً على جهازك:
+
+1. **استنساخ المشروع:**
+   ```bash
+   git clone [https://github.com/your-username/livora-studio.git](https://github.com/your-username/livora-studio.git)

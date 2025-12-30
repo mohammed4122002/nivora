@@ -1,18 +1,21 @@
 import Image from "next/image"
 import starShape from "@/public/star-shapp.png"
+
 const MarqueeSldier1 = () => {
   return (
-    <div className='marquee bg-white py-6 overflow-hidden'>
+    // أضفت dir="rtl" للتأكد من اتجاه العناصر بالداخل
+    <div className='marquee bg-white py-6 overflow-hidden' dir="rtl">
         <div className="marquee_text flex items-center gap-10">
-            <MarqueeItem text="Home built for life 1" />
-             <MarqueeItem text="Home built for life 2" />
-              <MarqueeItem text="Home built for life 3" />
-               <MarqueeItem text="Home built for life 4" />
+            <MarqueeItem text="منازل صُممت للحياة" />
+            <MarqueeItem text="إبداع في التصميم" />
+            <MarqueeItem text="جودة تدوم طويلاً" />
+            <MarqueeItem text="رفاهية بلا حدود" />
 
-            <MarqueeItem text="Home built for life 1" />
-             <MarqueeItem text="Home built for life 2" />
-              <MarqueeItem text="Home built for life 3" />
-               <MarqueeItem text="Home built for life 4" />
+            {/* تكرار العناصر لضمان استمرار الحركة السلسة */}
+            <MarqueeItem text="منازل صُممت للحياة" />
+            <MarqueeItem text="إبداع في التصميم" />
+            <MarqueeItem text="جودة تدوم طويلاً" />
+            <MarqueeItem text="رفاهية بلا حدود" />
         </div>
     </div>
   )
@@ -23,8 +26,9 @@ export default MarqueeSldier1
 function MarqueeItem({text}:{text:string}){
     return(
      <div className="flex items-center gap-8 whitespace-nowrap">
-        <h2 className="marquee-text text-5xl font-bold">{text}</h2>
-        <Image src={starShape} alt="starShape" width={40} height={40} />
+        {/* تغيير الخط أو الحجم ليتناسب مع العربية */}
+        <h2 className="marquee-text text-4xl md:text-5xl font-bold text-black uppercase">{text}</h2>
+        <Image src={starShape} alt="star" width={40} height={40} />
      </div>   
     )
 }

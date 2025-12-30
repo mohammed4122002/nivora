@@ -35,15 +35,36 @@ body{
   overflow-x: hidden;
 }
 /*Hero Header */
-.hero-header{
+.hero-header {
+  position: relative; /* ضروري لضبط مكان الخلفية */
   width: 100%;
   height: 100vh;
-  background-image: url(../public/Hero-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  overflow: hidden; /* لمنع أي زوائد ناتجة عن القلب */
+}
+
+/* العنصر الوهمي الذي سيحمل الصورة */
+.hero-header::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../public/Hero-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+  /*   ar قلب الصورة أفقياً */
+  transform: scaleX(-1); 
+  
+
+  
+  /* لجعل الصورة خلف العناصر الأخرى */
+  z-index: -1; 
 }
 
 

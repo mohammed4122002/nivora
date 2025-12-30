@@ -6,89 +6,84 @@ import about3 from "@/public/About-3.jpg";
 const About = () => {
   return (
     <>
-      <div className="px-[8%] lg:px-[16%] py-20" id="about">
+      <div className="px-[8%] lg:px-[16%] py-20" id="about" dir="rtl">
+        {/* الرأسية (Header) */}
         <div className="flex flex-col justify-center items-center">
           <div className="w-full lg:w-2/3 text-center">
-            <span className="text-lg Rethink font-semibold uppercase text-(--text-light)">
-              Designing spaces for living
+            <span className="text-lg Rethink font-semibold uppercase text-(--text-light) tracking-wide">
+              تصميم مساحات للحياة
             </span>
-            <h1 className="text-5xl md:text-7xl Rethink font-semibold">
-              we craft spaces with intention and care
+            <h1 className="text-5xl md:text-7xl Rethink font-semibold leading-tight mt-2">
+              نصمم مساحاتنا بكل عناية وإتقان
             </h1>
           </div>
         </div>
+
         <div className="mt-20 about-wrap">
-          <div className="about-content flex flex-col lg:flex-row gap-10 justify-between items-center w-full ">
-            <div className="w-full lg:w-1/2 ">
+          {/* الجزء الأول: صورة يمين - نص يسار (تم العكس للعربي) */}
+          <div className="about-content flex flex-col lg:flex-row gap-10 justify-between items-center w-full">
+            <div className="w-full lg:w-1/2">
               <div className="w-full lg:w-[90%]">
                 <Image
                   src={about1}
-                  alt="about1"
-                  className="w-full h-fll rounded-md object-cover"
+                  alt="تصميم عصري"
+                  className="w-full h-full rounded-md object-cover"
                 />
               </div>
             </div>
-            <div className="w-full lg:w-1/2 flex justify-end">
-              <div className="w-full lg:w-[90%]">
-                <h1 className="text-5xl Rethink font-semibold">
-                  Transforming spaces with vision
+            <div className="w-full lg:w-1/2 flex justify-start lg:pr-10">
+              <div className="w-full lg:w-[90%] text-right">
+                <h1 className="text-5xl Rethink font-semibold leading-snug">
+                  تحويل المساحات برؤية إبداعية
                 </h1>
-                <p className="text-(--text-light) mt-5">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Iusto ducimus illo molestias modi laboriosam temporibus
-                  aspernatur obcaecati ipsum delectus hic vero, aut aliquam id
-                  nesciunt. Totam enim iste itaque beatae.
+                <p className="text-(--text-light) mt-5 text-lg leading-relaxed">
+                  نحن نؤمن أن كل زاوية في منزلك تحكي قصة. نساعدك في تحويل تلك المساحات الصامتة إلى أماكن تنبض بالحياة والجمال الذي يعكس شخصيتك الفريدة.
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="about-content flex flex-col-reverse lg:flex-row gap-10 justify-between items-center w-full mt-20 ">
-            <div className="w-full lg:w-1/2 ">
-              <div className="w-full lg:w-[90%]">
-                <h1 className="text-5xl Rethink font-semibold">
-                  Transforming spaces with vision
-                </h1>
-                <p className="text-(--text-light) mt-5">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Iusto ducimus illo molestias modi laboriosam temporibus
-                  aspernatur obcaecati ipsum delectus hic vero, aut aliquam id
-                  nesciunt. Totam enim iste itaque beatae.
-                </p>
-              </div>
-            </div>
-
-            <div className="w-full lg:w-1/2 flex justify-end ">
-              <div className="w-full lg:w-[90%]">
+          {/* الجزء الثاني: نص يمين - صورة يسار (استخدمنا flex-row-reverse لعكس الترتيب في الشاشات الكبيرة) */}
+          <div className="about-content flex flex-col-reverse lg:flex-row-reverse gap-10 justify-between items-center w-full mt-20">
+            <div className="w-full lg:w-1/2">
+              <div className="w-full lg:w-[90%] flex lg:justify-end">
                 <Image
                   src={about2}
-                  alt="about1"
-                  className="w-full h-fll rounded-md object-cover"
+                  alt="رؤية فنية"
+                  className="w-full h-full rounded-md object-cover"
                 />
+              </div>
+            </div>
+            <div className="w-full lg:w-1/2 flex justify-start lg:pl-10">
+              <div className="w-full lg:w-[90%] text-right">
+                <h1 className="text-5xl Rethink font-semibold leading-snug">
+                  جودة لا تضاهى في التنفيذ
+                </h1>
+                <p className="text-(--text-light) mt-5 text-lg leading-relaxed">
+                  الدقة هي عنواننا. من اختيار المواد الخام وحتى اللمسات النهائية، نهتم بكل التفاصيل الصغيرة لنضمن لك نتيجة تفوق توقعاتك وتدوم طويلاً.
+                </p>
               </div>
             </div>
           </div>
 
-           <div className="about-content flex flex-col lg:flex-row gap-10 justify-between items-center w-full mt-20 ">
-            <div className="w-full lg:w-1/2 ">
+          {/* الجزء الثالث: صورة يمين - نص يسار */}
+          <div className="about-content flex flex-col lg:flex-row gap-10 justify-between items-center w-full mt-20">
+            <div className="w-full lg:w-1/2">
               <div className="w-full lg:w-[90%]">
                 <Image
                   src={about3}
-                  alt="about1"
-                  className="w-full h-fll rounded-md object-cover"
+                  alt="إتقان العمل"
+                  className="w-full h-full rounded-md object-cover"
                 />
               </div>
             </div>
-            <div className="w-full lg:w-1/2 flex justify-end">
-              <div className="w-full lg:w-[90%]">
-                <h1 className="text-5xl Rethink font-semibold">
-                  Transforming spaces with vision
+            <div className="w-full lg:w-1/2 flex justify-start lg:pr-10">
+              <div className="w-full lg:w-[90%] text-right">
+                <h1 className="text-5xl Rethink font-semibold leading-snug">
+                  حلول مخصصة لكل عميل
                 </h1>
-                <p className="text-(--text-light) mt-5">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Iusto ducimus illo molestias modi laboriosam temporibus
-                  aspernatur obcaecati ipsum delectus hic vero, aut aliquam id
-                  nesciunt. Totam enim iste itaque beatae.
+                <p className="text-(--text-light) mt-5 text-lg leading-relaxed">
+                  لا نتبع نمطاً واحداً، بل نبتكر لكل عميل ما يناسب احتياجاته ومساحته الخاصة، لنضمن توظيف كل متر مربع بأفضل طريقة ممكنة.
                 </p>
               </div>
             </div>
